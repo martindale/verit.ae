@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/martindale/verit.ae",
   "dependencies": {
-    "maki": "git://github.com/martindale/maki#community"
+    "maki": "git://github.com/martindale/maki#community",
+    "moment": "^2.14.1"
   }
 }
