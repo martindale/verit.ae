@@ -8,14 +8,15 @@ var DATABASE  = process.env.MAKI_DATABASE_NAME || NAMESPACE;
 
 module.exports = {
   service: {
-    name: process.env.MAKI_SERVICE_NAME || 'Veritae' ,
+    name: process.env.MAKI_SERVICE_NAME || 'Veritas Group' ,
     authority: process.env.MAKI_SERVICE_AUTHORITY || 'localhost:9200' ,
     namespace: NAMESPACE ,
-    mission: process.env.MAKI_SERVICE_MISSION || 'your trusted partner in the Bitcoin ecosystem.',
-    description: process.env.MAKI_SERVICE_DESCRIPTION || 'Maki allows you to focus on your project, rather than laboring over architecture decisions.  With true isomorphism, you control how your application behaves, and can then customize how your features are exposed on specific platforms.',
+    pitch: 'We are Veritas.',
+    mission: 'The world is changing.  Let us show you the way.',
+    description: 'Veritas Group offers technology and management consulting for social good projects.',
     source: 'https://github.com/martindale/verit.ae',
     icon: 'lab',
-    logo: '/img/maki-icon.png'
+    logo: '/images/veritas-group.jpg'
   },
   dns: {
     name: process.env.MAKI_DNS_NAME || 'localhost'
