@@ -14,9 +14,24 @@ block masthead
               i.icon.mail
             | &nbsp;&nbsp;&nbsp;Subscribe
             i.right.chevron.icon
+
+    h3.ui.inverted.header(style="margin-top: 4em;") We're excited to start the journey.  Subscribe to follow along.
+
+prepend navbar
+  a.item(href="/values")
+    i.icon.university
+    | &nbsp; Values
+
+append navbar
+  //- TODO: attach as a sub-service at this route
+  a.item(href="/snippets/what-is-bitcoin")
+    i.icon.bitcoin
+    |  What is Bitcoin?
     
-    h3.ui.inverted.header We're excited to start the journey.  Subscribe to follow along.
-    
+  a.right.item
+    i.icon.twitter.alt
+    | @VeritasGroup
+
 block content
   .ui.vertical.stripe.center.aligned.segment(style="margin-top: 6em;")
     .ui.container
