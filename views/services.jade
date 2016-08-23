@@ -1,0 +1,49 @@
+extends ../node_modules/maki/views/layouts/default
+
+block masthead
+  .ui.center.aligned.inverted.segment(style="background-color: inherit;")
+    h1.ui.inverted.header Reach for the stars.
+    h2.ui.inverted.header Let us handle the work.  We'll work with you on the details.
+
+prepend navbar
+  a.item(href="/values")
+    i.icon.university
+    | &nbsp; Values
+
+append navbar
+  //- TODO: attach as a sub-service at this route
+  a.item(href="/snippets/what-is-bitcoin")
+    i.icon.bitcoin
+    |  What is Bitcoin?
+    
+  a.right.item
+    i.icon.twitter.alt
+    | @VeritasGroup
+
+block content
+  .ui.vertical.stripe.center.aligned.segment(style="margin-top: 6em;")
+    .ui.text.container
+      h3.ui.horizontal.header.divider Inquiries
+      p We are excited to work with you.  First, let's learn a little more about you.
+      
+  .ui.vertical.stripe.segment(style="margin-top: 6em; margin-bottom: 6em;")
+    .ui.text.container
+      form.ui.huge.form(action="/inquiries", method="POST")
+        .massive.field
+          label Your Email
+          input(type="email", name="from", required)
+      
+        .massive.field
+          label Your message
+          textarea(name="message")
+          
+        .massive.field
+          button.ui.massive.green.right.floated.right.labeled.icon.button(type="submit")
+            span
+              i.icon.mail
+            | &nbsp; Submit
+            i.icon.right.chevron
+          .clearfix(style="clear: both;")
+
+block footer
+  include partials/footer
