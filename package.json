@@ -25,6 +25,8 @@
   "homepage": "https://github.com/martindale/verit.ae",
   "dependencies": {
     "maki": "git://github.com/martindale/maki#community",
+    "maki-cms-local": "0.0.2",
+    "maki-passport-local": "0.0.4",
     "moment": "^2.14.1"
   }
 }

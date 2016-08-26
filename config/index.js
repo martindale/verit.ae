@@ -8,12 +8,12 @@ var DATABASE  = process.env.MAKI_DATABASE_NAME || NAMESPACE;
 
 module.exports = {
   service: {
-    name: process.env.MAKI_SERVICE_NAME || 'Veritas Group' ,
+    name: process.env.MAKI_SERVICE_NAME || 'Veritas' ,
     authority: process.env.MAKI_SERVICE_AUTHORITY || 'localhost:9200' ,
     namespace: NAMESPACE ,
     pitch: 'We are Veritas.',
     mission: 'The world is changing.  Let us show you the way.',
-    description: 'Veritas Group offers technology and management consulting for social good projects.',
+    description: 'Veritas Group offers technology and management consulting for modern society.',
     source: 'https://github.com/martindale/verit.ae',
     icon: 'lab',
     logo: '/images/veritas-group.jpg'
